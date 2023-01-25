@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        :root {
+            --background: #0F2F3C;
+            --skin: #8EC83E;
+            --black: #10122b;
+            --white: #fff;
+            --brain: #fc76a3;
+            --tooth: #fff998;
+            --slime: #dae21c;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(225deg, var(--background)1%, var(--background) 50%, var(--black) 90%, var(--black)100%);
+        }
+
+        .container {
+            display: grid;
+            width: 800px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 50px);
+            background-color: slateblue;
+        }
+        .item {
+            width: 100%;
+            height: 100%;
+            background-color: var(--slime);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .sub-item {
+            width: 100%;
+            height: 100%;
+            background-color: var(--tooth);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="sub-item">💚</div>
+        </div>
+    </div>
+</body>
+</html>
