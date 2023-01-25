@@ -1,0 +1,27 @@
+.contenedor {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 100px 200px;
+}
+
+.item {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}
+
+.reto {
+    border: 2px solid seagreen;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.items {
+    border: 2px dashed slateblue;
+    font-size: 3rem;
+}

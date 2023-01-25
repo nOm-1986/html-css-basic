@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge One</title>
+    <style>
+        .content{
+            border: solid 20px lightseagreen;
+            border-radius: 10px;
+            width: 400px;
+            height: 400px;
+            background-color: azure;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            grid-auto-flow: column;
+            place-content: center;
+            gap: 1px;
+        }
+        .item{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-content: center;
+        }
+        .item-1, .item-4, .item-5 {
+            background-color: #9ca2ef;
+        }
+        .item-2, .item-6{
+            background-color: #5a61bd;
+        }
+        .item-3, .item-7{
+            background-color: #3F448C;
+        }
+        .item-2{ grid-area: 2 / 1 / 4 /2;}
+        .item-3{ grid-area: 1 / 2 / 3 / 3;}
+    </style>
+</head>
+<body>
+    <section class="content">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+    </section>
+</body>
+</html>

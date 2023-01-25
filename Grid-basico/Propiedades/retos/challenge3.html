@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge three, Using template-areas</title>
+    <style>
+        .content {
+            display: grid;
+            grid-template-columns: repeat(6, 16%);
+            grid-template-rows: repeat(5, 150px);
+            grid-template-areas:
+                "header header header header header header"
+                "side side main main main main"
+                "side side main main main main"
+                "side side main main main main"
+                "footer footer footer footer footer footer"
+            ;
+            place-content: center;
+        }
+        .item {
+            display: grid;
+            place-content: center;
+            width: 100%;
+            height: 100;
+        }
+        .header{ 
+            grid-area: header;
+            background-color: #0a5cb8;
+        }
+        .side {
+            grid-area: side;
+            background-color: #6eb8f5;
+        }
+        .main {
+            grid-area: main;
+            background-color: aliceblue;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: #014ba0;
+        }
+    </style>
+</head>
+<body>
+    <sectio class="content">
+        <div class="item header">Header</div>
+        <div class="item side">Side</div>
+        <div class="item main">Main</div>
+        <div class="item footer">Footer</div>
+    </sectio>
+</body>
+</html>
