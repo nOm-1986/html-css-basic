@@ -1,15 +1,15 @@
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   margin: 0;
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 20px;
   margin: 0;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -43,16 +43,14 @@ main {
   border-radius: 50em;
 }
 .perfil__nombre, .perfil__minibio h2 {
-  text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 .perfil__titulo, .perfil__minibio h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
 }
 .perfil__boton {
@@ -63,9 +61,9 @@ main {
   padding-top: 15px;
   border-radius: 20px;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
@@ -94,14 +92,14 @@ main {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 .estadistica--perfil span {
   font-size: 12px;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 
 .ubicacion--perfil {
@@ -161,10 +159,10 @@ main {
 }
 .galeria h2 {
   margin-bottom: 10px;
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 .galeria img {
   border-radius: 10px;
