@@ -17,6 +17,13 @@ $color-variacion: #3f579a;
     @return rgba($color, $nivel);
 }
 
+//loops
+@each $header, $size in (h1: 32px, h2: 27px, h3: 22px) {
+    #{$header} {
+        font-size: $size;
+        margin: 0;
+    }
+}
 
 * {
 	box-sizing: border-box;
