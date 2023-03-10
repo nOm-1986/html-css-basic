@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        :root {
+            --bg: #1e2345;
+            --violet: rgb(161, 132, 240);
+            --pink: #d60087;
+            --turquoise: #2fdabd;
+        }
+
+        h1 {
+            color: linear;
+        }
+
+        input:in-range {
+            background-color: rgba(114, 245, 114, 0.25);
+        }
+        
+        input:out-of-range {
+            background-color: rgba(245, 128, 128, 0.25);
+            border: 2px solid red;
+        }
+        
+        input:in-range + p::after {
+            content: 'Mayor de edad. 🚀';
+        }
+        
+        input:out-of-range + p::after {
+            content: 'Menor de edad. 🙈';
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            /* Border con degradado */
+            background-color: var(--bg);
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            box-sizing: border-box;
+            font-size: 60px;
+            
+            /* texto con degradado */
+            background-image: linear-gradient(to right, var(--violet), var(--turquoise), var(--violet));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            /*Si depronto un navegador no lo renderiza le pongo un color por defecto*/
+            background-color: var(--bg);
+            animation: gradient 0.5s linear infinite;
+        }
+
+        .gradient-border {
+            background: linear-gradient(to right, var(--violet) 25%, var(--turquoise)50%, var(--violet)75%);
+            background-repeat: repeat;
+            padding: 0.5rem;
+            border-radius: 20px;
+            animation: gradient 0.5s linear infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 20rem 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hola mundo con colores</h1>
+
+    <label for="age">Intoduce tu edad y te digo si eres menor o mayor de edad</label>
+    <input type="number" name="age" id="age" min="18" max="100" value="14">
+    <p>Eres: </p>
+    <section class="gradient-border">
+        <section class="container">
+            <div class="item">Modelo Caja</div>
+        </section>
+    </section>
+</body>
+</html>
