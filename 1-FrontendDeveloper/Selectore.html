@@ -61,7 +61,7 @@
             -moz-text-fill-color: transparent;
             /*Si depronto un navegador no lo renderiza le pongo un color por defecto*/
             background-color: var(--bg);
-            animation: gradient 0.5s linear infinite;
+            animation: gradient 5s linear infinite;
         }
 
         .gradient-border {
@@ -69,7 +69,7 @@
             background-repeat: repeat;
             padding: 0.5rem;
             border-radius: 20px;
-            animation: gradient 0.5s linear infinite;
+            animation: rotating 5s linear infinite;
         }
 
         @keyframes gradient {
@@ -82,6 +82,15 @@
             }
             100% {
                 background-position: 0 0;
+            }
+        }
+
+        @keyframes rotating {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -360rem 0;
             }
         }
 

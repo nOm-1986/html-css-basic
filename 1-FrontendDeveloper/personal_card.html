@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
+    <title>Card</title>
+    <style>
+        :root {
+            --blanco: white;
+            --border-claro: #cecece;
+            --dark-background: #2c2c2c;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--dark-background);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lato', sans-serif;
+            color:var(--blanco);
+        }
+
+        .card {
+            width: 400px;
+            height: 550px;
+            border: 1px solid #333333;
+            border-radius: 30px;
+            background: var(--dark-background);
+            box-shadow:  8px 8px 16px #272727,
+                        -8px -8px 16px #313131;
+        }
+
+        .card__background {
+            position: relative;
+            border-radius: 20px 20px 0 0;
+            background-image: url("./assets/pexels-andy-vu-3244513.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+        }
+
+        .card__foto {
+            background-image: url("assets/J\ BELTAN.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid var(--border-claro);
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+        .card__personal-information {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        .card__personal-information p:nth-child(1) {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .card__personal-information p:nth-child(2) {
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 5px;
+            color: #dbdbdb;
+        }
+
+        .card__contact {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        .card__follow {
+            height: 80px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .card__follow__followers, .card__follow__following {
+            border-top: 1px solid var(--border-claro);
+            border-bottom: 1px solid var(--border-claro);
+            display: flex;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card__follow__followers {
+            border-right: 1px solid var(--border-claro);
+        }
+        .card__follow__followers i,  .card__follow__following i {
+            font-size: 19px;
+            font-weight: bold;
+            color: var(--border-claro);
+        }
+        .card__follow__followers span, .card__follow__following span {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--border-claro);
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <div class="card__background">
+            <img class="card__foto">
+        </div>
+        <div class="card__personal-information">
+            <p>José Fabián Beltrán Meza</p>
+            <p>Fullstack developer</p>
+        </div>
+        <div class="card__contact">
+            <p><i></i>Colombia</p>
+            <p>Send E-mail</p>
+        </div>
+        <div class="card__follow">
+            <div class="card__follow__followers">
+                <i>150,000</i>
+                <span>Followers</span>
+            </div>
+            <div class="card__follow__following">
+                <i>36,000</i>
+                <span>Following</span>
+            </div>
+        </div>
+        <div class="card__button">
+            Follow
+        </div>
+    </section>
+</body>
+</html>
