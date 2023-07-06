@@ -222,3 +222,4 @@ src/proyect/assets/*.jpg
 
 #Ignore somethings on Tailwind
 Tailwind2-3/node_modules/
+Tailwind2-3/public/img/
