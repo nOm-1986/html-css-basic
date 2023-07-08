@@ -6,6 +6,17 @@
   <link rel="stylesheet" href="../public/css/tailwind.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Platzi Trabel</title>
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  </style>
 </head>
 <body>
   <nav></nav>
@@ -24,7 +35,42 @@
         </div>
       </div>
     </div>
-    <div id="recomendadas"></div>
+    <div id="recomendados" class="p-6 flex items-center flex-col">
+      <h3 class="text-3xl font-semibold text-primary">Recomendados</h3>
+      <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-5">
+        <div class="Card">
+          <div class="Card--cover bg-norway"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Noruega</p>
+            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-norway"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Noruega</p>
+            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-norway"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Noruega</p>
+            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-norway"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Noruega</p>
+            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="rentas_destacadas"></div>
   </section>
   <footer>

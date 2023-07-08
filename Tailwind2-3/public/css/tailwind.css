@@ -692,12 +692,28 @@ select {
   position: absolute;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
 
+.h-2\/5 {
+  height: 40%;
+}
+
 .h-3\/4 {
   height: 75%;
+}
+
+.h-3\/5 {
+  height: 60%;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .h-full {
@@ -708,16 +724,16 @@ select {
   height: 100vh;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
 .w-36 {
   width: 9rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -728,32 +744,64 @@ select {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-96 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(24rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(24rem * var(--tw-space-y-reverse));
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overscroll-x-contain {
+  overscroll-behavior-x: contain;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem;
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
-.bg-red-200 {
+.bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+  background-color: rgb(143 162 6 / var(--tw-bg-opacity));
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-new_york {
+  background-image: url('../img/new_york.jpg');
+}
+
+.bg-norway {
+  background-image: url('../img/norway.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .p-3 {
@@ -764,14 +812,35 @@ select {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
@@ -781,6 +850,11 @@ select {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(204 45 74 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -793,26 +867,71 @@ select {
   outline-width: 0px;
 }
 
-.hover\:outline-dashed:hover {
-  outline-style: dashed;
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.focus\:border-blue-200:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(191 219 254 / var(--tw-border-opacity));
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.Card {
+  height: 16rem;
+  width: 12rem;
+  flex: none;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.Card--cover {
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+}
+
+.Card--info {
+  height: 40%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 162 6 / var(--tw-bg-opacity));
+}
+
+.Card--info__title {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.Card--info__subtitle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.Card:nth-child(even) .Card--info {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.Card:nth-child(even) .Card--info__title, .Card:nth-child(even) .Card--info__subtitle {
+  --tw-text-opacity: 1;
+  color: rgb(97 174 201 / var(--tw-text-opacity));
 }
 
 .focus\:border-blue-100:focus {
   --tw-border-opacity: 1;
   border-color: rgb(219 234 254 / var(--tw-border-opacity));
-}
-
-.focus\:outline-1:focus {
-  outline-width: 1px;
-}
-
-.focus\:ring:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
