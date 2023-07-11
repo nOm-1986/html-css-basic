@@ -18,15 +18,16 @@
     }
   </style>
 </head>
-<body>
+<body class="font-Montserrat">
   <nav></nav>
   <div id="tab_bar"></div>
   <section class="w-full h-screen">
     <div id="home">
       <div class="w-full h-3/4">
         <div class="w-full h-full flex flex-col items-center absolute space-y-96 py-4 ">
-          <input class="outline-0 focus:border-blue-100 shadow-sm p-3 rounded-full" placeholder="San Francisco" type="search" name="" id="">
-          <button class="w-36 text-xl text-primary font-semibold p-4 rounded-full bg-white shadow-sm">
+          <input class="w-48 outline-0 p-3  focus:border-blue-100 shadow-sm rounded-full transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" name="" id="">
+          <!-- input class="w-48 outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-10/12" placeholder="San Francisco" type="search" name="" id="" -->
+          <button class="w-36 text-lg text-primary font-semibold p-4 rounded-full bg-white shadow-sm  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">
             Explora
           </button>
         </div>
@@ -37,7 +38,7 @@
     </div>
     <div id="recomendados" class="p-6 flex items-center flex-col">
       <h3 class="text-3xl font-semibold text-primary">Recomendados</h3>
-      <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-5">
+      <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-5 overflow-hidden">
         <div class="Card">
           <div class="Card--cover bg-norway"></div>
           <div class="Card--info">
@@ -71,10 +72,12 @@
         </div>
       </div>
     </div>
-    <div id="rentas_destacadas"></div>
+    <div id="rentas_destacadas">
+      
+    </div>
   </section>
-  <footer>
 
+  <footer>
   </footer>
 </body>
 </html>
