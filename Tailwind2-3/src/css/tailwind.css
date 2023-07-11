@@ -29,3 +29,12 @@
 .Card:nth-child(even) .Card--info__title, .Card:nth-child(even) .Card--info__subtitle {
   @apply text-terciary;
 }
+
+
+.CardRent {
+  @apply w-full h-auto flex flex-col space-y-6 items-center justify-center mb-10;
+}
+
+.CardTitle {
+  @apply text-white text-3xl px-8 pt-8 pb-2 font-semibold;
+}
