@@ -7,14 +7,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Platzi Trabel</title>
   <style>
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
+    /* For IE, Edge and Firefox */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
     }
 
-    /* For IE, Edge and Firefox */
-    .scrollbar-hide {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    ::-webkit-scrollbar-track {
+      background-color: #ebebeb;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: #ccc;
     }
   </style>
 </head>
@@ -24,21 +32,39 @@
   <section class="w-full h-auto">
     <div id="home">
       <div class="w-full h-3/4">
-        <div class="w-full h-full flex flex-col items-center absolute space-y-96 py-4 ">
-          <input class="w-48 outline-0 p-3  focus:border-blue-100 shadow-sm rounded-full transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" name="" id="">
-          <!-- input class="w-48 outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-10/12" placeholder="San Francisco" type="search" name="" id="" -->
-          <button class="w-36 text-lg text-primary font-semibold p-4 rounded-full bg-white shadow-sm  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">
+        <div class="w-full h-full flex flex-col items-center absolute space-y-96 py-4 lg:space-y-0  lg:items-start lg:pt-32 lg:justify-start">
+          <input class="w-48 outline-0 p-3  focus:border-blue-100 shadow-sm rounded-full transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
+          <div class="hidden h-auto lg:w-2/3 lg:flex pb-6">
+            <p class="text-4xl ml-16 font-bold text-white">Encuentra más ubicaciones como esta</p>
+          </div>
+          <button class="w-36 text-lg text-primary font-semibold p-4 rounded-full bg-white shadow-sm  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110 lg:ml-16">
             Explora
           </button>
         </div>
-        <div class="w-full h-full">
-          <img src="./img/sanFrancisco.jpg" alt="">
+        <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+          <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
         </div>
       </div>
     </div>
-    <div id="recomendados" class="p-6 flex items-center flex-col">
+    <div id="recomendados" class="p-6 flex items-start flex-col overflow-hidden">
       <h3 class="text-3xl font-semibold text-primary">Recomendados</h3>
-      <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-5 overflow-hidden">
+      <div class="w-full h-72 items-center mt-6  overflow-x-auto overscroll-x-contain flex space-x-6">
+        <div class="Card">
+          <div class="Card--cover bg-norway"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Noruega</p>
+            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-norway"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Noruega</p>
+            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+          </div>
+        </div>
+
         <div class="Card">
           <div class="Card--cover bg-norway"></div>
           <div class="Card--info">
