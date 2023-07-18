@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth dark" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,32 +26,32 @@
     }
   </style>
 </head>
-<body class="font-Montserrat">
-  <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between items-center fixed z-20">
+<body class="font-Montserrat dark:bg-gray-900">
+  <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between items-center fixed z-20 dark:bg-gray-800 dark:text-white">
     <div class="h-auto w-auto">
       <p class="text-2xl">Fabo Travel</p>
     </div>
-    <div class="flex space-x-8 h-full justify-center items-center">
-      <a class="font-bold text-md text-primary" href="#home">Inicio</a>
-      <a class="font-bold text-md text-primary" href="#recomendados">Recomendados</a>
-      <a class="font-bold text-md text-primary" href="#rentas_destacadas">Rentas</a>
-      <a class="font-bold text-md text-primary" href="#faqs">FAQS</a>
-      <a class="font-bold text-md text-primary" href="#nosotros">Nosotros</a>
+    <div class="flex space-x-8 h-full justify-center items-center ">
+      <a class="font-bold text-md text-primary dark:text-white" href="#home">Inicio</a>
+      <a class="font-bold text-md text-primary dark:text-white" href="#recomendados">Recomendados</a>
+      <a class="font-bold text-md text-primary dark:text-white" href="#rentas_destacadas">Rentas</a>
+      <a class="font-bold text-md text-primary dark:text-white" href="#faqs">FAQS</a>
+      <a class="font-bold text-md text-primary dark:text-white" href="#nosotros">Nosotros</a>
     </div>
     <div class="flex space-x-4">
       <a href="#rentas_destacadas">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path class="text-primary" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          <path class="text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
         </svg>
       </a>
       <a href="">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path class="fill-current text-primary" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+          <path class="fill-current text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
         </svg>      
       </a>
       <a href="">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path class="text-primary" stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />        </svg>      
+          <path class="text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />        </svg>      
       </a>
     </div>
   </nav>
@@ -75,7 +75,7 @@
     </div>
     <div id="recomendados" class="p-6 flex items-start flex-col overflow-hidden">
       <h3 class="text-3xl font-semibold text-primary">Recomendados</h3>
-      <div class="w-full h-72 items-center mt-6  overflow-x-auto overscroll-x-contain flex space-x-6">
+      <div class="w-full h-72 items-center mt-6  overflow-x-auto overscroll-x-contain flex lg:justify-center space-x-6">
         <div class="Card">
           <div class="Card--cover bg-norway"></div>
           <div class="Card--info">
@@ -85,76 +85,53 @@
         </div>
 
         <div class="Card">
-          <div class="Card--cover bg-norway"></div>
+          <div class="Card--cover bg-new_york"></div>
           <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+            <p class="Card--info__title">New York</p>
+            <p class="Card--info__subtitle">La gran manzana</p>
           </div>
         </div>
 
         <div class="Card">
-          <div class="Card--cover bg-norway"></div>
+          <div class="Card--cover bg-yosemite"></div>
           <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+            <p class="Card--info__title">Yosemite</p>
+            <p class="Card--info__subtitle">Un respiro del mundo</p>
           </div>
         </div>
 
         <div class="Card">
-          <div class="Card--cover bg-norway"></div>
+          <div class="Card--cover bg-seattle"></div>
           <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+            <p class="Card--info__title">Seattle</p>
+            <p class="Card--info__subtitle">Una gran ciudad para disfrutar</p>
           </div>
         </div>
 
         <div class="Card">
-          <div class="Card--cover bg-norway"></div>
+          <div class="Card--cover bg-switzerland"></div>
           <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+            <p class="Card--info__title">Suiza</p>
+            <p class="Card--info__subtitle">El mejor chocolate caliente</p>
           </div>
         </div>
 
         <div class="Card">
-          <div class="Card--cover bg-norway"></div>
+          <div class="Card--cover bg-sydney"></div>
           <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+            <p class="Card--info__title">Sydney</p>
+            <p class="Card--info__subtitle">Conoce la famosísima Opera</p>
           </div>
         </div>
 
         <div class="Card">
-          <div class="Card--cover bg-norway"></div>
+          <div class="Card--cover bg-europe"></div>
           <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+            <p class="Card--info__title">Edimburgo</p>
+            <p class="Card--info__subtitle">Conoce los castillos medievales</p>
           </div>
         </div>
 
-        <div class="Card">
-          <div class="Card--cover bg-norway"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
-          </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-norway"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
-          </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-norway"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
-          </div>
-        </div>
       </div>
     </div>
     <div id="rentas_destacadas" class="px-6 h-auto w-full">
@@ -182,50 +159,50 @@
       <div class="w-full h-auto px-6 flex flex-col space-y-5 mt-6">
         <p class="text-3xl text-primary font-semibold py-4">FAQS</p>
         <div class="my-6">
-          <p class="text-xl font-medium text-primary capitalize">payment methods</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary capitalize  dark:text-white">payment methods</p>
+          <p class="font-medium pt-2  dark:text-white">
             Para estancias menores a una semana es importante
           </p>
         </div>
         <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary capitalize">Cancellation Policy</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary capitalize dark:text-white">Cancellation Policy</p>
+          <p class="font-medium pt-2 " dark:text-white>
             Para estancias menores a una semana es importante
           </p>
         </div>
         <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary">Long Stay</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary dark:text-white">Long Stay</p>
+          <p class="font-medium pt-2  dark:text-white">
             Para estancias menores a una semana es importante
           </p>
         </div>
         <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary">How to book</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary dark:text-white">How to book</p>
+          <p class="font-medium pt-2  dark:text-white">
             Para estancias menores a una semana es importante
           </p>
         </div>
         <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary">Reviews</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary dark:text-white">Reviews</p>
+          <p class="font-medium pt-2  dark:text-white">
             Para estancias menores a una semana es importante
           </p>
         </div>
         <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary">Send a feedback</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary dark:text-white">Send a feedback</p>
+          <p class="font-medium pt-2 dark:text-white">
             Para estancias menores a una semana es importante
           </p>
         </div>
         <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary">Chat with an assessor</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary dark:text-white">Chat with an assessor</p>
+          <p class="font-medium pt-2 dark:text-white">
             Para estancias menores a una semana es importante
           </p>
         </div>
         <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary">Another things more</p>
-          <p class="font-medium pt-2 ">
+          <p class="text-xl font-medium text-primary dark:text-white">Another things more</p>
+          <p class="font-medium pt-2 dark:text-white">
             Para estancias menores a una semana es importante
           </p>
         </div>
@@ -234,15 +211,15 @@
     </div>
   </section>
 
-  <footer id="nosotros" class="w-full h-auto p-6 bg-gray-100 space-y-2">
-    <p class="text-lg">Acerca De</p>
+  <footer id="nosotros" class="w-full h-auto p-6 bg-gray-100 space-y-2 dark:bg-gray-800">
+    <p class="text-lg dark:text-white">Acerca De</p>
     <p class="text-sm text-gray-300">Acerca De</p>
     <p class="text-sm text-gray-300">Inversionistas</p>
     <p class="text-sm text-gray-300">Empleos</p>
     <p class="text-sm text-gray-300">Terminos y condiciones</p>
     <p class="text-sm text-gray-300">Platzi travel, Inc.</p>
   </footer>
-  <div id="tab_bar" class="fixed left-0 bottom-0 w-full h-16 bg-white space-x-8 flex justify-center items-center lg:hidden">
+  <div id="tab_bar" class="fixed left-0 bottom-0 w-full h-16 bg-white space-x-8 flex justify-center items-center lg:hidden dark:bg-gray-700">
     <a href="#home">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
         <path class="fill-curren" stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />

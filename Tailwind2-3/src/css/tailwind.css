@@ -7,11 +7,11 @@
 }
 
 .Card--cover {
-  @apply w-full h-3/5 bg-cover;
+  @apply w-full h-3/5 rounded-t-lg bg-cover bg-center;
 }
 
 .Card--info {
-  @apply w-full h-2/5 bg-secondary;
+  @apply w-full h-2/5 rounded-b-lg bg-secondary dark:bg-gray-800; 
 }
 
 .Card--info__title {
@@ -23,11 +23,11 @@
 }
 
 .Card:nth-child(even) .Card--info {
-  @apply bg-white;
+  @apply bg-white dark:bg-gray-400;
 }
 
 .Card:nth-child(even) .Card--info__title, .Card:nth-child(even) .Card--info__subtitle {
-  @apply text-terciary;
+  @apply text-terciary dark:text-white; 
 }
 
 
