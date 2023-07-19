@@ -26,8 +26,8 @@
     }
   </style>
 </head>
-<body class="font-Montserrat dark:bg-gray-900">
-  <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between items-center fixed z-20 dark:bg-gray-800 dark:text-white">
+<body class="w-full h-full font-Montserrat dark:bg-gray-900 flex flex-col items-center overflow-x-auto">
+  <nav class="w-5/6 h-14 hidden bg-white lg:flex p-4 justify-between items-center fixed z-20 dark:bg-gray-800 dark:text-white">
     <div class="h-auto w-auto">
       <p class="text-2xl">Fabo Travel</p>
     </div>
@@ -55,163 +55,165 @@
       </a>
     </div>
   </nav>
+  <section class=" w-full lg:w-5/6 h-full">
+    <section class="w-full h-auto">
+      <div id="home">
+        <div class="w-full h-3/4">
+          <div class="w-full lg:w-auto h-full flex flex-col items-center absolute space-y-96 py-4 lg:space-y-0  lg:items-start lg:pt-32 lg:justify-start">
+            <input class="w-48 outline-0 p-3  focus:border-blue-100 shadow-sm rounded-full transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
+            <div class="hidden h-auto lg:w-2/3 lg:flex pb-6">
+              <p class="text-4xl ml-16 font-bold text-white">Encuentra más ubicaciones como esta</p>
+            </div>
+            <button class="w-36 text-lg text-primary font-semibold p-4 rounded-full bg-white shadow-sm  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110 lg:ml-16">
+              Explora
+            </button>
+          </div>
+          <div class="w-full h-full lg:h-[50rem] lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+            <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="recomendados" class="p-6 flex items-start flex-col overflow-hidden">
+        <h3 class="text-3xl font-semibold text-primary">Recomendados</h3>
+        <div class="w-full h-72 items-center mt-6  overflow-x-auto overscroll-x-contain flex lg:justify-center space-x-6">
+          <div class="Card">
+            <div class="Card--cover bg-norway"></div>
+            <div class="Card--info">
+              <p class="Card--info__title">Noruega</p>
+              <p class="Card--info__subtitle">Paisajes Increíbles</p>
+            </div>
+          </div>
   
-  <section class="w-full h-auto">
-    <div id="home">
-      <div class="w-full h-3/4">
-        <div class="w-full h-full flex flex-col items-center absolute space-y-96 py-4 lg:space-y-0  lg:items-start lg:pt-32 lg:justify-start">
-          <input class="w-48 outline-0 p-3  focus:border-blue-100 shadow-sm rounded-full transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
-          <div class="hidden h-auto lg:w-2/3 lg:flex pb-6">
-            <p class="text-4xl ml-16 font-bold text-white">Encuentra más ubicaciones como esta</p>
+          <div class="Card">
+            <div class="Card--cover bg-new_york"></div>
+            <div class="Card--info">
+              <p class="Card--info__title">New York</p>
+              <p class="Card--info__subtitle">La gran manzana</p>
+            </div>
           </div>
-          <button class="w-36 text-lg text-primary font-semibold p-4 rounded-full bg-white shadow-sm  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110 lg:ml-16">
-            Explora
-          </button>
-        </div>
-        <div class="w-full h-full lg:h-[50rem] lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
-          <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
+  
+          <div class="Card">
+            <div class="Card--cover bg-yosemite"></div>
+            <div class="Card--info">
+              <p class="Card--info__title">Yosemite</p>
+              <p class="Card--info__subtitle">Un respiro del mundo</p>
+            </div>
+          </div>
+  
+          <div class="Card">
+            <div class="Card--cover bg-seattle"></div>
+            <div class="Card--info">
+              <p class="Card--info__title">Seattle</p>
+              <p class="Card--info__subtitle">Una gran ciudad para disfrutar</p>
+            </div>
+          </div>
+  
+          <div class="Card">
+            <div class="Card--cover bg-switzerland"></div>
+            <div class="Card--info">
+              <p class="Card--info__title">Suiza</p>
+              <p class="Card--info__subtitle">El mejor chocolate caliente</p>
+            </div>
+          </div>
+  
+          <div class="Card">
+            <div class="Card--cover bg-sydney"></div>
+            <div class="Card--info">
+              <p class="Card--info__title">Sydney</p>
+              <p class="Card--info__subtitle">Conoce la famosísima Opera</p>
+            </div>
+          </div>
+  
+          <div class="Card">
+            <div class="Card--cover bg-europe"></div>
+            <div class="Card--info">
+              <p class="Card--info__title">Edimburgo</p>
+              <p class="Card--info__subtitle">Conoce los castillos medievales</p>
+            </div>
+          </div>
+  
         </div>
       </div>
-    </div>
-    <div id="recomendados" class="p-6 flex items-start flex-col overflow-hidden">
-      <h3 class="text-3xl font-semibold text-primary">Recomendados</h3>
-      <div class="w-full h-72 items-center mt-6  overflow-x-auto overscroll-x-contain flex lg:justify-center space-x-6">
-        <div class="Card">
-          <div class="Card--cover bg-norway"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Noruega</p>
-            <p class="Card--info__subtitle">Paisajes Increíbles</p>
+      <div id="rentas_destacadas" class="px-6 h-auto w-full">
+        <p class="text-3xl text-primary font-semibold pb-6 mt-2">Rentas</p>
+        <div class="CardRent">
+          <div class="w-full h-full bg-chicago bg-cover rounded-xl mb-15 md:col-span-2 md:row-span-2">
+            <p class="CardTitle">Chicago</p>
+            <p class="font-medium pl-8 text-white mr-24">2 habitaciones, baño y cocina</p>
           </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-new_york"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">New York</p>
-            <p class="Card--info__subtitle">La gran manzana</p>
+          <div class="w-full h-full bg-losAngeles bg-cover rounded-xl mb-15 md:row-span-2">
+            <p class="CardTitle">Los Angeles</p>
+            <p class="font-medium pl-8 text-white mr-24">4 habitaciones, 3 baño, cocina y piscina</p>
           </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-yosemite"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Yosemite</p>
-            <p class="Card--info__subtitle">Un respiro del mundo</p>
+          <div class="w-full h-96 bg-miami bg-cover rounded-xl mb-15">
+            <p class="CardTitle">Miami</p>
+            <p class="font-medium pl-8 text-white mr-24">3 habitaciones, 2 baño, cocina y excelente vista al mar</p>
           </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-seattle"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Seattle</p>
-            <p class="Card--info__subtitle">Una gran ciudad para disfrutar</p>
+          <div class="w-full h-96 bg-bali bg-cover rounded-xl mb-15">
+            <p class="CardTitle">Bali</p>
+            <p class="font-medium pl-8 text-white mr-24">2 habitaciones, baño, cocina y piscina</p>
           </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-switzerland"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Suiza</p>
-            <p class="Card--info__subtitle">El mejor chocolate caliente</p>
-          </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-sydney"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Sydney</p>
-            <p class="Card--info__subtitle">Conoce la famosísima Opera</p>
-          </div>
-        </div>
-
-        <div class="Card">
-          <div class="Card--cover bg-europe"></div>
-          <div class="Card--info">
-            <p class="Card--info__title">Edimburgo</p>
-            <p class="Card--info__subtitle">Conoce los castillos medievales</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div id="rentas_destacadas" class="px-6 h-auto w-full">
-      <p class="text-3xl text-primary font-semibold pb-6 mt-2">Rentas</p>
-      <div class="CardRent">
-        <div class="w-full h-full bg-chicago bg-cover rounded-xl mb-15 md:col-span-2 md:row-span-2">
-          <p class="CardTitle">Chicago</p>
-          <p class="font-medium pl-8 text-white mr-24">2 habitaciones, baño y cocina</p>
-        </div>
-        <div class="w-full h-full bg-losAngeles bg-cover rounded-xl mb-15 md:row-span-2">
-          <p class="CardTitle">Los Angeles</p>
-          <p class="font-medium pl-8 text-white mr-24">4 habitaciones, 3 baño, cocina y piscina</p>
-        </div>
-        <div class="w-full h-96 bg-miami bg-cover rounded-xl mb-15">
-          <p class="CardTitle">Miami</p>
-          <p class="font-medium pl-8 text-white mr-24">3 habitaciones, 2 baño, cocina y excelente vista al mar</p>
-        </div>
-        <div class="w-full h-96 bg-bali bg-cover rounded-xl mb-15">
-          <p class="CardTitle">Bali</p>
-          <p class="font-medium pl-8 text-white mr-24">2 habitaciones, baño, cocina y piscina</p>
         </div>
       </div>
-    </div>
-    <div id="faqs" class="w-full h-full pb-10">
-      <div class="w-full h-auto px-6 flex flex-col space-y-5 mt-6">
-        <p class="text-3xl text-primary font-semibold py-4">FAQS</p>
-        <div class="my-6">
-          <p class="text-xl font-medium text-primary capitalize  dark:text-white">payment methods</p>
-          <p class="font-medium pt-2  dark:text-white">
-            Para estancias menores a una semana es importante
-          </p>
+      <div id="faqs" class="w-auto h-auto">
+        <div class="w-full h-auto px-6 flex flex-col space-y-5 mt-6">
+          <p class="text-3xl text-primary font-semibold py-4">FAQS</p>
+          <div class="my-6">
+            <p class="text-xl font-medium text-primary capitalize  dark:text-white">payment methods</p>
+            <p class="font-medium pt-2  dark:text-white">
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+          <div class="my-6 mb-9">
+            <p class="text-xl font-medium text-primary capitalize dark:text-white">Cancellation Policy</p>
+            <p class="font-medium pt-2 " dark:text-white>
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+          <div class="my-6 mb-9">
+            <p class="text-xl font-medium text-primary dark:text-white">Long Stay</p>
+            <p class="font-medium pt-2  dark:text-white">
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+          <div class="my-6 mb-9">
+            <p class="text-xl font-medium text-primary dark:text-white">How to book</p>
+            <p class="font-medium pt-2  dark:text-white">
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+          <div class="my-6 mb-9">
+            <p class="text-xl font-medium text-primary dark:text-white">Reviews</p>
+            <p class="font-medium pt-2  dark:text-white">
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+          <div class="my-6 mb-9">
+            <p class="text-xl font-medium text-primary dark:text-white">Send a feedback</p>
+            <p class="font-medium pt-2 dark:text-white">
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+          <div class="my-6 mb-9">
+            <p class="text-xl font-medium text-primary dark:text-white">Chat with an assessor</p>
+            <p class="font-medium pt-2 dark:text-white">
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+          <div class="my-6 mb-9">
+            <p class="text-xl font-medium text-primary dark:text-white">Another things more</p>
+            <p class="font-medium pt-2 dark:text-white">
+              Para estancias menores a una semana es importante
+            </p>
+          </div>
+  
         </div>
-        <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary capitalize dark:text-white">Cancellation Policy</p>
-          <p class="font-medium pt-2 " dark:text-white>
-            Para estancias menores a una semana es importante
-          </p>
-        </div>
-        <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary dark:text-white">Long Stay</p>
-          <p class="font-medium pt-2  dark:text-white">
-            Para estancias menores a una semana es importante
-          </p>
-        </div>
-        <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary dark:text-white">How to book</p>
-          <p class="font-medium pt-2  dark:text-white">
-            Para estancias menores a una semana es importante
-          </p>
-        </div>
-        <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary dark:text-white">Reviews</p>
-          <p class="font-medium pt-2  dark:text-white">
-            Para estancias menores a una semana es importante
-          </p>
-        </div>
-        <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary dark:text-white">Send a feedback</p>
-          <p class="font-medium pt-2 dark:text-white">
-            Para estancias menores a una semana es importante
-          </p>
-        </div>
-        <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary dark:text-white">Chat with an assessor</p>
-          <p class="font-medium pt-2 dark:text-white">
-            Para estancias menores a una semana es importante
-          </p>
-        </div>
-        <div class="my-6 mb-9">
-          <p class="text-xl font-medium text-primary dark:text-white">Another things more</p>
-          <p class="font-medium pt-2 dark:text-white">
-            Para estancias menores a una semana es importante
-          </p>
-        </div>
-
       </div>
-    </div>
+    </section>
   </section>
+  
 
-  <footer id="nosotros" class="w-full h-auto mb-16 p-6 bg-gray-100 space-y-2 dark:bg-gray-800">
+  <footer id="nosotros" class="w-5/6 h-auto mb-16 lg:mb-0 pl-6 pt-6 pb-6 bg-gray-100 space-y-2 dark:bg-gray-800">
     <p class="text-lg dark:text-white">Acerca De</p>
     <p class="text-sm text-gray-300">Acerca De</p>
     <p class="text-sm text-gray-300">Inversionistas</p>
